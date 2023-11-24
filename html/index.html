@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craigslist</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel = "stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__logo">
+          <a href="index.html" id="navbar__logo">
+            <img src="Pictures/logo.png" alt="Craigslist" height="20px" />
+          </a>
+          <h1 class="logo__name">craigslist</h1>
+        </div>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar_item">
+          <a href="index.html" class="navbar__links"><b>Home</b></a>
+        </li>
+        <li class="navbar_item">
+          <a href="listings.html" class="navbar__links"><b>Listings</b></a>
+        </li>
+        <li class="navbar_item">
+          <a href="events.html" class="navbar__links"><b>Events</b></a>
+        </li>
+        <li class="navbar_item">
+          <a href="aboutus.html" class="navbar__links"><b>About Us</b></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="searchbar">
+      <h1 id="findListings">Find Listings In</h1>
+      <div class="searchbar__location">
+        <img src="Pictures/location.png" alt="locationPin" height="30px" />
+        <select id="countryDropdown">
+          <option value="SG" selected>Singapore</option>
+          <option value="Canada">Canada</option>
+          <option value="UK">United Kingdom</option>
+          <option value="Germany">Germany</option>
+          <option value="France">France</option>
+        </select>
+      </div>
+      <div id="search__container">
+        <input
+          type="text"
+          id="search__bar"
+          placeholder="What are you looking for?"
+        />
+        <button id="search__button" onclick="search()">Search</button>
+      </div>
+    </div>
+    <div class="categories">
+      <h2 id="top__categories"><b>Top Categories</b></h2>
+      <div class="button-container">
+        <button class="square-button">
+          <img src="Pictures/office.png" alt="Category 1" height="145px" />
+        </button>
+        <button class="square-button">
+          <img src="Pictures/apartments.png" alt="Category 2" height="145px" />
+        </button>
+        <button class="square-button">
+          <img src="Pictures/cars.png" alt="Category 3" height="145px" />
+        </button>
+        <button class="square-button">
+          <img src="Pictures/bikes.png" alt="Category 3" height="145px" />
+        </button>
+        <button class="square-button">
+          <img src="Pictures/clothes.png" alt="Category 3" height="145px" />
+        </button>
+      </div>
+    </div>
+    <div class="recommended">
+      <h2 id="recommendedForYou"><b>Recommended For You</b></h2>
+      <div class="button-container2">
+        <button class="square-button1">
+          <img src="Pictures/event1.png" alt="Recommended 1" height="212px" />
+        </button>
+        <button class="square-button1">
+          <img src="Pictures/event2.png" alt="Recommended 2" height="212px" />
+        </button>
+        <button class="square-button1">
+          <img src="Pictures/event3.png" alt="Recommended 3" height="212px" />
+        </button>
+        <button class="square-button1">
+          <img src="Pictures/event4.png" alt="Recommended 3" height="212px" />
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

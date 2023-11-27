@@ -38,9 +38,9 @@
   }
 
 .categories-container {
-    width: 80%;
-    margin: auto;
     display: flex;
+    width: 90%;
+    margin: auto;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 20px;
@@ -58,7 +58,8 @@
   }
 
   .category-image{
-    height: 230px;
+    height:215px;
+    width: 285px
   }
   
   .category-title {

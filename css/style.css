@@ -15,6 +15,7 @@
   position: sticky;
   top: 0;
   max-width: auto;
+  border: 1px solid lightgrey;
 }
 
 /* Navbar Logo Styles */
@@ -66,5 +67,19 @@
 .logo__name {
   margin-left: 5px;
   font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  color: black;
+  background-color:rgb(240, 240, 240);
+  text-align: center;
+  padding: 20px 0;
+  border: 2px solid lightgrey;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
 }
 

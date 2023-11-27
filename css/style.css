@@ -1,5 +1,7 @@
+/* Importing Montserrat font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 
+/* Global Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,11 +9,14 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/* Navbar Styles */
 .navbar {
   background-color: rgb(240, 240, 240);
-  position:sticky;
+  position: sticky;
   top: 0;
 }
+
+/* Navbar Logo Styles */
 .navbar__logo {
   margin: 20px 0px 0px 20px;
   display: flex;
@@ -19,6 +24,7 @@
   height: 35px;
 }
 
+/* Navbar Container Styles */
 .navbar__container {
   display: flex;
   height: 35px;
@@ -26,8 +32,10 @@
   margin-left: 10px;
 }
 
+/* Navbar Menu Styles */
 .navbar__menu {
   height: 60px;
+  width: 100%;
   list-style: none;
   display: flex;
   align-items: center;
@@ -35,10 +43,12 @@
   padding: 25px 0px 15px 0px;
 }
 
+/* Navbar Item Styles */
 .navbar_item {
   padding: 20px;
 }
 
+/* Navbar Links Styles */
 .navbar__links {
   font-size: 1rem;
   text-decoration: none;
@@ -46,93 +56,13 @@
   white-space: nowrap;
 }
 
+/* Navbar Links Hover Styles */
 .navbar__links:hover {
   color: #007bff;
 }
 
-#findListings {
-  padding: 10px;
-}
+/* Logo Name Styles */
 .logo__name {
   margin-left: 5px;
   font-size: 1rem;
-}
-
-select {
-  padding: 10px;
-  font-size: 16px;
-}
-
-#search__container {
-  padding: 10px;
-}
-
-#search__bar {
-  height: 40px;
-  width: 600px;
-  font-size: 18px;
-  border: 1px solid white;
-  border-radius: 5px;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.searchbar {
-  display: flex;
-  flex-direction: column;
-  background-color: #3779fd;
-  height: 200px;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 1rem;
-  width: 100%;
-}
-
-#findListings {
-  padding: 10px;
-}
-.logo__name {
-  margin-left: 5px;
-  font-size: 1rem;
-}
-
-select {
-  padding: 10px;
-  font-size: 16px;
-}
-
-#search__container {
-  padding: 10px;
-}
-
-#search__bar {
-  height: 40px;
-  width: 600px;
-  font-size: 18px;
-  border: 1px solid white;
-  border-radius: 5px;
-  text-align: center;
-  margin-top: 10px;
-}
-
-#countryDropdown {
-  margin: 5px;
-}
-
-#top__categories {
-  margin: 40px 0px 0px 50px;
-}
-.button-container {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 30px;
-}
-
-.square-button:hover {
-  background-color: #acacac;
-}
-#countryDropdown {
-  margin: 5px;
 }

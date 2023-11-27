@@ -1,63 +1,103 @@
-#top__categories {
-    margin: 40px 0px 0px 50px;
-  }
-  .button-container {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 30px;
-  }
-  
-  .square-button:hover {
-    background-color: #acacac;
-  }
-  #countryDropdown {
-    margin: 5px;
-  }
-  
-  #top__categories {
-    margin: 40px 0px 0px 95px;
-  }
-  .button-container {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 30px;
-  }
-  
-  .square-button {
-    width: 150px;
-    height: 150px;
-    margin: 0 5px;
-    border: 3px solid lightblue;
-    background-color: #f1f0f0;
-    color: #fff;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .square-button:hover {
-    background-color: #acacac;
-  }
-  
-  .button-container2 {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 30px;
-  }
-  
-  .square-button1 {
-    width: 220px;
-    height: 220px;
-    margin: 0 5px;
-    border: 3px solid lightblue;
-    background-color: #f1f0f0;
-    color: #fff;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  #recommendedForYou {
-    margin: 40px 0px 0px 95px;
-  }
-  
+/* Searchbar Styles */
+#findListings {
+  padding: 10px;
+  margin: 0px;
+}
+
+#search__container {
+  padding: 10px;
+}
+
+#searchbar__input {
+  height: 40px;
+  width: 600px;
+  font-size: 18px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.searchbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #3779fd;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  width: 100%;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+}
+
+#countryDropdown {
+  margin: 5px;
+}
+
+/* Top Categories Styles */
+
+.categories__text{
+  display: flex;
+  align-items: baseline;
+  list-style: none;
+  margin: 40px 0px 20px 0px;
+  justify-content: center;
+}
+
+#top__categories{
+  display: flex;
+  margin-right: 750px;
+}
+
+#all__categories{
+  display: flex;
+  justify-content: flex-end;
+}
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.square-button {
+  width: 150px;
+  height: 150px;
+  margin: 0 5px;
+  border: 3px solid lightblue;
+  background-color: #f1f0f0;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.square-button:hover {
+  background-color: #acacac;
+}
+
+/* Recommended Styles */
+.button-container2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px;
+}
+
+.square-button1 {
+  width: 220px;
+  height: 220px;
+  margin: 0 5px;
+  border: 3px solid lightblue;
+  background-color: #f1f0f0;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#recommendedForYou {
+  margin: 40px 0px 0px 95px;
+}
+

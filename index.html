@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Craigslist</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel = "stylesheet" href="index.css" />
+    <link rel = "stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel = "stylesheet" href="css/index.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -47,14 +48,17 @@
       <div id="search__container">
         <input
           type="text"
-          id="search__bar"
+          id="searchbar__input"
           placeholder="What are you looking for?"
         />
         <button id="search__button" onclick="search()">Search</button>
       </div>
     </div>
     <div class="categories">
-      <h2 id="top__categories"><b>Top Categories</b></h2>
+      <ul class="categories__text">
+        <li><h2 id="top__categories"><b>Top Categories</b></h2></li>
+        <li><a href="categories.html"><h3 id="all__categories">All Categories</h3></li></a>
+      </ul>
       <div class="button-container">
         <button class="square-button">
           <img src="Pictures/office.png" alt="Category 1" height="145px" />

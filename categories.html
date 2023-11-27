@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craigslist</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/categories.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__logo">
+          <a href="index.html" id="navbar__logo">
+            <img src="Pictures/logo.png" alt="Craigslist" height="20px" />
+          </a>
+          <h1 class="logo__name">craigslist</h1>
+        </div>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar_item">
+          <a href="index.html" class="navbar__links"><b>Home</b></a>
+        </li>
+        <li class="navbar_item">
+          <a href="listings.html" class="navbar__links"><b>Listings</b></a>
+        </li>
+        <li class="navbar_item">
+          <a href="events.html" class="navbar__links"><b>Events</b></a>
+        </li>
+        <li class="navbar_item">
+          <a href="aboutus.html" class="navbar__links"><b>About Us</b></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="searchbar">
+      <h1 id="findListings">Find Listings In</h1>
+      <div class="searchbar__location">
+        <img src="Pictures/location.png" alt="locationPin" height="30px" />
+        <select id="countryDropdown">
+          <option value="SG" selected>Singapore</option>
+          <option value="Canada">Canada</option>
+          <option value="UK">United Kingdom</option>
+          <option value="Germany">Germany</option>
+          <option value="France">France</option>
+        </select>
+      </div>
+      <div id="search__container">
+        <input
+          type="text"
+          id="searchbar__input"
+          placeholder="What are you looking for?"
+        />
+        <button id="search__button" onclick="search()">Search</button>
+      </div>
+    </div>
+    <div class="categories-container">
+      <!-- Category 1 -->
+      <div class="category-box">
+        <img
+          src="Pictures/community.png"
+          alt="Community Img"
+          class="category-image"
+        />
+        <div class="category-title">Community</div>
+        <div class="category-words">
+          <div class="category-words-column1">
+            <a class="clickable-word" href="#">Activities</a>
+            <a class="clickable-word" href="#">Lost & Found</a>
+            <a class="clickable-word" href="#">Classes</a>
+            <a class="clickable-word" href="#">Events</a>
+          </div>
+          <div class="category-words-column2">
+            <a class="clickable-word" href="#">Politics</a>
+            <a class="clickable-word" href="#">Pets</a>
+            <a class="clickable-word" href="#">Volunteers</a>
+            <a class="clickable-word" href="#">Rants & Raves</a>
+          </div>
+          <div>
+            <a class="view-more" href="#">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 2 -->
+      <div class="category-box">
+        <img
+          src="Pictures/housing.jpg"
+          alt="Community Img"
+          class="category-image"
+        />
+        <div class="category-title">Housing</div>
+        <div class="category-words">
+          <div class="category-words-column1">
+            <a class="clickable-word" href="#">Apartments</a>
+            <a class="clickable-word" href="#">Swap</a>
+            <a class="clickable-word" href="#">Wanted</a>
+            <a class="clickable-word" href="#">Office</a>
+          </div>
+          <div class="category-words-column2">
+            <a class="clickable-word" href="#">Commercial</a>
+            <a class="clickable-word" href="#">Parking</a>
+            <a class="clickable-word" href="#">Storage</a>
+            <a class="clickable-word" href="#">Temporary</a>
+          </div>
+          <div>
+            <a class="view-more" href="#">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 3 -->
+      <div class="category-box">
+        <img
+          src="Pictures/jobs.jpg"
+          alt="Community Img"
+          class="category-image"
+        />
+        <div class="category-title">Jobs</div>
+        <div class="category-words">
+          <div class="category-words-column1">
+            <a class="clickable-word" href="#">Finance</a>
+            <a class="clickable-word" href="#">Office</a>
+            <a class="clickable-word" href="#">Engineering</a>
+            <a class="clickable-word" href="#">Design</a>
+          </div>
+          <div class="category-words-column2">
+            <a class="clickable-word" href="#">Education</a>
+            <a class="clickable-word" href="#">Food</a>
+            <a class="clickable-word" href="#">Labor</a>
+            <a class="clickable-word" href="#">Fitness</a>
+          </div>
+          <div>
+            <a class="view-more" href="#">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 4 -->
+      <div class="category-box">
+        <img
+          src="Pictures/services.jpg"
+          alt="Community Img"
+          class="category-image"
+        />
+        <div class="category-title">Services</div>
+        <div class="category-words">
+          <div class="category-words-column1">
+            <a class="clickable-word" href="#">Automotive</a>
+            <a class="clickable-word" href="#">Beauty</a>
+            <a class="clickable-word" href="#">Computer</a>
+            <a class="clickable-word" href="#">Financial</a>
+          </div>
+          <div class="category-words-column2">
+            <a class="clickable-word" href="#">Labor/Move</a>
+            <a class="clickable-word" href="#">Legal</a>
+            <a class="clickable-word" href="#">Real Estate</a>
+            <a class="clickable-word" href="#">Travel</a>
+          </div>
+          <div>
+            <a class="view-more" href="#">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 5 -->
+      <div class="category-box">
+        <img
+          src="Pictures/car.jpg"
+          alt="Community Img"
+          class="category-image"
+        />
+        <div class="category-title">For Sale</div>
+        <div class="category-words">
+          <div class="category-words-column1">
+            <a class="clickable-word" href="#">Antiques</a>
+            <a class="clickable-word" href="#">Appliances</a>
+            <a class="clickable-word" href="#">Bikes</a>
+            <a class="clickable-word" href="#">Clothes</a>
+          </div>
+          <div class="category-words-column2">
+            <a class="clickable-word" href="#">Electronics</a>
+            <a class="clickable-word" href="#">Furniture</a>
+            <a class="clickable-word" href="#">Jewelry</a>
+            <a class="clickable-word" href="#">Tickets</a>
+          </div>
+          <div>
+            <a class="view-more" href="#">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 6 -->
+      <div class="category-box">
+        <img
+          src="Pictures/forums.jpg"
+          alt="Community Img"
+          class="category-image"
+        />
+        <div class="category-title">Forums</div>
+        <div class="category-words">
+          <div class="category-words-column1">
+            <a class="clickable-word" href="#">Apple</a>
+            <a class="clickable-word" href="#">Beauty</a>
+            <a class="clickable-word" href="#">Celebs</a>
+            <a class="clickable-word" href="#">Divorce</a>
+          </div>
+          <div class="category-words-column2">
+            <a class="clickable-word" href="#">Kpop</a>
+            <a class="clickable-word" href="#">Film</a>
+            <a class="clickable-word" href="#">Gaming</a>
+            <a class="clickable-word" href="#">Sports</a>
+          </div>
+          <div>
+            <a class="view-more" href="#">View More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

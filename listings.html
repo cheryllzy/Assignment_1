@@ -6,6 +6,7 @@
     <title>Craigslist</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/listings.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -32,3 +33,49 @@
         </li>
       </ul>
     </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <aside class="filter">
+        <h2>Filter by:</h2>
+        <label> <input type="checkbox" id="filterRent" />Full-Time</label>
+        <label> <input type="checkbox" id="filterSale" />Part-Time</label>
+      </aside>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div id="search__container">
+        <input
+          type="text"
+          id="searchbar__input"
+          placeholder="Search Office"
+        />
+        <button id="search__button" onclick="search()">Search</button>
+      </div>
+      <div class="property" data-type="rent">
+        <div><ul class="listingInfo">
+          <img class ="pic"src="Pictures/coalition logo.jpg">
+          <li>4th April</li>
+          <li>Coalition Technologies</li>
+          <li>Job: Administrative Assistant</li>
+          <li>Compensation: Negotiable</li>
+          <li>Employment Type: Full-Time</li>
+        </ul>
+        </div>
+      </div>
+      <div class="property" data-type="sale">
+        <div><ul class="listingInfo">
+          <li>5th April</li>
+          <li>Beacon Hill Associates</li>
+          <li>Job: Receptionist</li>
+          <li>Compensation: Up to $20.00 per hour</li>
+          <li>Employment Type: Part-Time</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/listings.js"></script>
+  </body>
+</html>

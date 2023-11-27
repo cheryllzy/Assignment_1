@@ -1,0 +1,42 @@
+#search__container {
+  padding: 10px;
+}
+
+#searchbar__input {
+  height: 40px;
+  width: 80%;
+  font-size: 18px;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sidebar {
+  width: 15%;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  border: 1px solid lightgrey;
+
+}
+
+.main-content {
+  margin-left: 15%;
+  padding: 20px;
+}
+
+.listingInfo{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  margin: 10px;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.pic{
+  height: 60px;
+  width: 60px;
+}

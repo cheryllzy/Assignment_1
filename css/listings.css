@@ -1,5 +1,5 @@
 #search__container {
-  padding: 10px;
+  padding: 10px 10px 10px 0px;
 }
 
 #searchbar__input {
@@ -17,7 +17,7 @@
   height: 100vh;
   padding: 20px;
   position: fixed;
-  border: 1px solid lightgrey;
+  border: 2px solid lightgrey;
 
 }
 
@@ -26,17 +26,30 @@
   padding: 20px;
 }
 
-.listingInfo{
+.listing__container {
   display: flex;
   list-style: none;
-  flex-direction: column;
-  margin: 10px;
   border: 2px solid lightgrey;
   border-radius: 5px;
   padding: 5px;
+  margin-bottom: 10px
 }
 
-.pic{
-  height: 60px;
-  width: 60px;
+.listing__item {
+  display: flex;
+  align-items: center; /* Center items on the cross axis */
+}
+
+.pic {
+  height: 100px;
+  width: 100px;
+}
+
+.info {
+  margin-left: 20px; /* Add margin to separate the logo and info */
+}
+
+.listing__details {
+  display: flex;
+  flex-direction: column;
 }

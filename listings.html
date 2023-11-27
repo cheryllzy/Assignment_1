@@ -23,7 +23,7 @@
           <a href="index.html" class="navbar__links"><b>Home</b></a>
         </li>
         <li class="navbar_item">
-          <a href="listings.html" class="navbar__links"><b>Listings</b></a>
+          <a href="categories.html" class="navbar__links"><b>Categories</b></a>
         </li>
         <li class="navbar_item">
           <a href="events.html" class="navbar__links"><b>Events</b></a>
@@ -46,34 +46,89 @@
     <!-- Main Content -->
     <div class="main-content">
       <div id="search__container">
-        <input
-          type="text"
-          id="searchbar__input"
-          placeholder="Search Office"
-        />
+        <input type="text" id="searchbar__input" placeholder="Search Office" />
         <button id="search__button" onclick="search()">Search</button>
       </div>
-      <div class="property" data-type="rent">
-        <div><ul class="listingInfo">
-          <img class ="pic"src="Pictures/coalition logo.jpg">
-          <li>4th April</li>
-          <li>Coalition Technologies</li>
-          <li>Job: Administrative Assistant</li>
-          <li>Compensation: Negotiable</li>
-          <li>Employment Type: Full-Time</li>
-        </ul>
-        </div>
-      </div>
-      <div class="property" data-type="sale">
-        <div><ul class="listingInfo">
-          <li>5th April</li>
-          <li>Beacon Hill Associates</li>
-          <li>Job: Receptionist</li>
-          <li>Compensation: Up to $20.00 per hour</li>
-          <li>Employment Type: Part-Time</li>
-        </ul>
-        </div>
-      </div>
+      <!-- Listing 1 -->
+<div class="property" data-type="rent">
+  <ul class="listing__container">
+    <li class="listing__item">
+      <img
+        class="pic"
+        src="Pictures/coalition logo.jpg"
+        alt="Coalition Logo"
+      />
+      <ul class="info">
+        <li class="listing__details">4th April</li>
+        <li class="listing__details">Coalition Technologies</li>
+        <li class="listing__details">Job: Administrative Assistant</li>
+        <li class="listing__details">Compensation: Negotiable</li>
+        <li class="listing__details">Employment Type: Full-Time</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<!-- Listing 2 -->
+<div class="property" data-type="sale">
+  <ul class="listing__container">
+    <li class="listing__item">
+      <img
+        class="pic"
+        src="Pictures/beacon hill.jpg"
+        alt="Beacon Hill Associates Logo"
+      />
+      <ul class="info">
+        <li class="listing__details">5th April</li>
+        <li class="listing__details">Beacon Hill Associates</li>
+        <li class="listing__details">Job: Receptionist</li>
+        <li class="listing__details">Compensation: Up to $20.00 per hour</li>
+        <li class="listing__details">Employment Type: Part-Time</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<!-- Listing 3 -->
+<div class="property" data-type="rent">
+  <ul class="listing__container">
+    <li class="listing__item">
+      <img
+        class="pic"
+        src="Pictures/pinnacle.jpg"
+        alt="Pinnacle Restaurant Services Logo"
+      />
+      <ul class="info">
+        <li class="listing__details">6th April</li>
+        <li class="listing__details">Pinnacle Restaurant Services</li>
+        <li class="listing__details">Job: Customer Services & Purchasing</li>
+        <li class="listing__details">Compensation: Negotiable</li>
+        <li class="listing__details">Employment Type: Full-Time</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<!-- Listing 4 -->
+<div class="property" data-type="sale">
+  <ul class="listing__container">
+    <li class="listing__item">
+      <img
+        class="pic"
+        src="Pictures/dogwood tutoring.jpg"
+        alt="Dogwood Tutoring and Test Prep Logo"
+      />
+      <ul class="info">
+        <li class="listing__details">7th April</li>
+        <li class="listing__details">Dogwood Tutoring and Test Prep</li>
+        <li class="listing__details">Job: Office Administrator</li>
+        <li class="listing__details">Compensation: $18.00-$20.00 per hour</li>
+        <li class="listing__details">Employment Type: Part-Time</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
     </div>
 
     <script src="js/listings.js"></script>

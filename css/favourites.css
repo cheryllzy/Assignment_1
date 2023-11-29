@@ -1,0 +1,16 @@
+.view_listing_button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  .view_listing_button:hover {
+    background-color: #ddd;
+  }

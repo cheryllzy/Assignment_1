@@ -67,25 +67,25 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// function to add item to favorites
+// function to add listing to favorites
 function addToFavourites(id) {
   // get favourites from local storage or empty array if no favourites
   const favourites = JSON.parse(localStorage.getItem('favourites')) || [];
 
-  // check if item is in favourites
+  // check if listing is in favourites
   if (!favourites.includes(id)) {
       // add to favourites
       favourites.push(id);
 
       // save updated to local storage
       localStorage.setItem('favourites', JSON.stringify(favourites));
-      alert('Item added to favorites!');
+      alert('Listing added to favorites!');
   } else {
-      alert('Item is already in favorites!');
+      alert('Listing is already in favorites!');
   }
 }
 
-// function to remove items from favourites
+// function to remove listing from favourites
 function removeFromFavourites(id) {
   // Retrieve favorites from local storage
   const favourites = JSON.parse(localStorage.getItem('favourites')) || [];

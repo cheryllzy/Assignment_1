@@ -1,43 +1,59 @@
-document.addEventListener('DOMContentLoaded', function () {
-  // Retrieve favorites from local storage
-  const favourites = JSON.parse(localStorage.getItem('favourites')) || [];
+const listingsDetails = {
+  1: {
+    company: "Coalition Technologies",
+    job: "Administrative Assistant",
+  },
+  2: {
+    company: "Beacon Hill Associates",
+    job: "Receptionist",
+  },
+  3: {
+    company: "Pinnacle Restaurant Services",
+    job: "Customer Services & Purchasing",
+  },
+  4: {
+    company: "Dogwood Tutoring and Test Prep",
+    job: "Office Administrator",
+  },
+};
 
-  // Display favorites
-  const favouritesContainer = document.getElementById('favourites-container');
+document.addEventListener("DOMContentLoaded", function () {
+  // get favourites from local storage
+  const favourites = JSON.parse(localStorage.getItem("favourites")) || [];
+
+  // display favourites
+  const favouritesContainer = document.getElementById("favourites-container");
 
   if (favourites.length === 0) {
-      favouritesContainer.innerHTML = '<p>No favourites selected.</p>';
+    favouritesContainer.innerHTML = "<p>No listings added.</p>";
   } else {
-      favourites.forEach(id => {
-          const favouriteItem = document.createElement('div');
-          favouriteItem.className = 'favourite-item';
-          favouriteItem.innerHTML = `
-              <button onclick="removeFromFavourites(${id})">Remove from Favourites</button>
-              <img class="pic" src="Pictures/item${id}.jpg" alt="Item ${id}" />
-              <ul class="info">
-                  <li class="listing__details">Item ${id}</li>
-                  <!-- Add more details as needed -->
-              </ul>
+    favourites.forEach((id) => {
+      const favouriteItem = document.createElement("div");
+      favouriteItem.className = "favourite-item";
+
+      // get details from specific id
+      const details = listingsDetails[id];
+
+      favouriteItem.innerHTML = `
+          <button onclick="removeFromFavourites(${id})">Remove from Favourites</button>
+          <p>Company: ${details.company}</p>
+          <p>Job: ${details.job}</p>
+          <a href="listingdetails.html?id=${id}" class="view_listing_button">View Listing</a>
           `;
-          favouritesContainer.appendChild(favouriteItem);
-      });
+      favouritesContainer.appendChild(favouriteItem);
+    });
   }
 });
 
-// Function to remove item from favorites
+// remove listing from favourites function
 function removeFromFavourites(id) {
-  // Retrieve favorites from local storage
-  const favourites = JSON.parse(localStorage.getItem('favourites')) || [];
-
-  // Remove the item from favorites
+  const favourites = JSON.parse(localStorage.getItem("favourites")) || [];
+  // remove listing from favourites
   const index = favourites.indexOf(id);
   if (index !== -1) {
-      favourites.splice(index, 1);
-
-      // Save the updated favorites to local storage
-      localStorage.setItem('favourites', JSON.stringify(favourites));
-
-      // Reload the page to reflect changes
-      location.reload();
+    favourites.splice(index, 1);
+    // save to local storage
+    localStorage.setItem("favourites", JSON.stringify(favourites));
+    location.reload();
   }
 }

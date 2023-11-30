@@ -39,22 +39,22 @@
 
 .categories-container {
     display: flex;
-    width: 90%;
-    margin: auto;
+    flex-direction: row;
+    margin: 0% 5% 0% 5%;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 20px;
+    column-count: 2;
   }
 
   .category-box {
-    height: 452px;
-    width: 333px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
     text-align: center;
     border-radius: 5px;
+    flex: 0 0 calc(33.33% - 80px); 
   }
 
   .category-image{

@@ -35,10 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const details = listingsDetails[id];
 
       favouriteItem.innerHTML = `
-          <button onclick="removeFromFavourites(${id})">Remove from Favourites</button>
           <p>Company: ${details.company}</p>
           <p>Job: ${details.job}</p>
           <a href="listingdetails.html?id=${id}" class="view_listing_button">View Listing</a>
+          <button onclick="removeFromFavourites(${id})">Remove from Favourites</button>
           `;
       favouritesContainer.appendChild(favouriteItem);
     });

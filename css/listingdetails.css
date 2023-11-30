@@ -1,0 +1,62 @@
+.listing__container {
+    display: flex;
+    list-style: none;
+    padding: 5px;
+    margin-left: 5%;
+    margin-top: 2%;
+
+  }
+  
+  .listing__item {
+    display: flex;
+    align-items: center; /* Center items on the cross axis */
+  }
+  
+  .pic {
+    height: 10rem;
+    width: 10rem;
+    border:2px solid black;
+    border-radius: 5px;
+  }
+  
+  .info {
+    margin-left: 20px; /* Add margin to separate the logo and info */
+  }
+  
+  .listing__details {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+  
+  .button__container{
+    margin: 5px 5px 5px 0px;
+  }
+
+  #applyNow{
+    font-size: 1.2rem;
+    background-color: #007bff;
+    border-radius: 5px;
+    color: white;
+    padding: 3px;
+  }
+
+  #applyNow:hover{
+    cursor: pointer;
+    background-color:#248eff ;
+  }
+
+  .listingBoxes{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .listingBox{
+    margin-top: 1rem;
+  }
+
+  #listingPic{
+    width: 100%;
+  }
+
+

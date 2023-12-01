@@ -13,7 +13,7 @@
       <div class="navbar__container">
         <div class="navbar__logo">
           <a href="index.html" id="navbar__logo">
-            <img src="Pictures/logo.png" alt="Craigslist" height="20px" />
+            <img src="Pictures/logo.png" alt="Craigslist" height="20" />
           </a>
           <h1 class="logo__name">craigslist</h1>
         </div>
@@ -24,10 +24,14 @@
         <a href="#"><b>Events</b></a>
         <a href="favourites.html"><b>Favourites</b></a>
         <a href="#"><b>About Us</b></a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="NavDropDown()">&#9776;</a>
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="NavDropDown()"
+          >&#9776;</a
+        >
       </div>
-        
-      </ul>
     </nav>
 
     <div class="property" data-type="part">
@@ -35,7 +39,7 @@
         <li class="listing__item">
           <img
             class="pic"
-            src="Pictures/coalition logo.jpg"
+            src="Pictures/coalition_logo.jpg"
             alt="Dogwood Tutoring and Test Prep Logo"
           />
           <ul class="info">
@@ -45,10 +49,10 @@
             <li class="listing__details">
               Location: 3500 Deer Creek Road, Palo Alto
             </li>
-            <div class="button__container">
-              <button id="applyNow"><b>Apply Now</b></button>
-            </div>
           </ul>
+          <div class="button__container">
+            <button id="applyNow"><b>Apply Now</b></button>
+          </div>
         </li>
       </ul>
     </div>
@@ -105,9 +109,12 @@
           services for our clients.
         </p>
       </div>
-      <div class="listingBox"><h3>Map/Location:
-        <img id="listingPic" src="Pictures/map.jpg" alt="Map"/>
-      </h3></div>
+      <div class="listingBox">
+        <h3>
+          Map/Location:
+          <img id="listingPic" src="Pictures/map.jpg" alt="Map" />
+        </h3>
+      </div>
     </section>
     <script src="js/script.js"></script>
   </body>

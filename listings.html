@@ -1,138 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Craigslist</title>
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/listings.css" />
-</head>
-<body>
-  <nav class="navbar">
-    <div class="navbar__container">
-      <div class="navbar__logo">
-        <a href="index.html" id="navbar__logo">
-          <img src="Pictures/logo.png" alt="Craigslist" height="20px" />
-        </a>
-        <h1 class="logo__name">craigslist</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craigslist</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/listings.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__logo">
+          <a href="index.html" id="navbar__logo">
+            <img src="Pictures/logo.png" alt="Craigslist" height="20" />
+          </a>
+          <h1 class="logo__name">craigslist</h1>
+        </div>
       </div>
-    </div>
-    <div class="topnav" id="myTopnav">
-      <a href="index.html" class="active"><b>Home</b></a>
-      <a href="categories.html"><b>Categories</b></a>
-      <a href="#"><b>Events</b></a>
-      <a href="favourites.html"><b>Favourites</b></a>
-      <a href="#"><b>About Us</b></a>
-      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="NavDropDown()">&#9776;</a>
-    </div>
-      
-    </ul>
-  </nav>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active"><b>Home</b></a>
+        <a href="categories.html"><b>Categories</b></a>
+        <a href="#"><b>Events</b></a>
+        <a href="favourites.html"><b>Favourites</b></a>
+        <a href="#"><b>About Us</b></a>
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="NavDropDown()"
+          >&#9776;</a
+        >
+      </div>
+    </nav>
 
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <aside class="filter">
-      <h3 id="filter_by">Filter by:</h3>
-      <label class="filterName"> <input type="checkbox" id="filterFt" />Full-Time</label><br/>
-      <label class="filterName"> <input type="checkbox" id="filterPt" />Part-Time</label>
-    </aside>
-  </div>
-
-  <!-- Main Content -->
-  <div class="main-content">
-    <div id="search__container">
-      <input type="text" id="searchbar__input" placeholder="Search Office" />
-      <button id="search__button" onclick="search()">Search</button>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <aside class="filter">
+        <h3 id="filter_by">Filter by:</h3>
+        <label class="filterName">
+          <input type="checkbox" id="filterFt" />Full-Time</label
+        ><br />
+        <label class="filterName">
+          <input type="checkbox" id="filterPt" />Part-Time</label
+        >
+      </aside>
     </div>
 
-    <!-- Listing 1 -->
-    <div class="property" data-type="full">
-      <ul class="listing__container">
-        <li class="listing__item">
-          <img class="pic" src="Pictures/coalition logo.jpg" alt="Coalition Logo" />
-          <ul class="info">
-            <li class="listing__details">4th April</li>
-            <li class="listing__details"><b>Coalition Technologies</b></li>
-            <li class="listing__details">Job: Administrative Assistant</li>
-            <li class="listing__details">Compensation: Negotiable</li>
-            <li class="listing__details">Employment Type: Full-Time</li>
+    <!-- Main Content -->
+    <div class="main-content">
+      <div id="search__container">
+        <input type="text" id="searchbar__input" placeholder="Search Office" />
+        <button id="search__button" onclick="search()">Search</button>
+      </div>
+
+      <!-- Listing 1 -->
+      <div class="property" data-type="full">
+        <ul class="listing__container">
+          <li class="listing__item">
+            <img
+              class="pic"
+              src="Pictures/coalition_logo.jpg"
+              alt="Coalition Logo"
+            />
+            <ul class="info">
+              <li class="listing__details">4th April</li>
+              <li class="listing__details"><b>Coalition Technologies</b></li>
+              <li class="listing__details">Job: Administrative Assistant</li>
+              <li class="listing__details">Compensation: Negotiable</li>
+              <li class="listing__details">Employment Type: Full-Time</li>
+            </ul>
             <div class="button__container">
-                <a href="listingdetails.html" class="viewListing">View Listing</a> 
+              <a href="listingdetails.html" class="viewListing">View Listing</a>
               <button id="addFavourite1">Add to Favourites</button>
             </div>
-          </ul>
-        </li>
-      </ul>
-    </div>
+          </li>
+        </ul>
+      </div>
 
-    <!-- Listing 2 -->
-    <div class="property" data-type="part">
-      <ul class="listing__container">
-        <li class="listing__item">
-          <img class="pic" src="Pictures/beacon hill.jpg" alt="Beacon Hill Associates Logo" />
-          <ul class="info">
-            <li class="listing__details">5th April</li>
-            <li class="listing__details"><b>Beacon Hill Associates</b></li>
-            <li class="listing__details">Job: Receptionist</li>
-            <li class="listing__details">Compensation: Up to $20.00 per hour</li>
-            <li class="listing__details">Employment Type: Part-Time</li>
+      <!-- Listing 2 -->
+      <div class="property" data-type="part">
+        <ul class="listing__container">
+          <li class="listing__item">
+            <img
+              class="pic"
+              src="Pictures/beacon_hill.jpg"
+              alt="Beacon Hill Associates Logo"
+            />
+            <ul class="info">
+              <li class="listing__details">5th April</li>
+              <li class="listing__details"><b>Beacon Hill Associates</b></li>
+              <li class="listing__details">Job: Receptionist</li>
+              <li class="listing__details">
+                Compensation: Up to $20.00 per hour
+              </li>
+              <li class="listing__details">Employment Type: Part-Time</li>
+            </ul>
             <div class="button__container">
-              <a href="listingdetails.html" class="viewListing">View Listing</a> 
+              <a href="listingdetails.html" class="viewListing">View Listing</a>
               <button id="addFavourite2">Add to Favourites</button>
-          </ul>
-        </li>
-      </ul>
-    </div>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-    <!-- Listing 3 -->
-    <div class="property" data-type="full">
-      <ul class="listing__container">
-        <li class="listing__item">
-          <img class="pic" src="Pictures/pinnacle.jpg" alt="Pinnacle Restaurant Services Logo" />
-          <ul class="info">
-            <li class="listing__details">6th April</li>
-            <li class="listing__details"><b>Pinnacle Restaurant Services</b></li>
-            <li class="listing__details">Job: Customer Services & Purchasing</li>
-            <li class="listing__details">Compensation: Negotiable</li>
-            <li class="listing__details">Employment Type: Full-Time</li>
+      <!-- Listing 3 -->
+      <div class="property" data-type="full">
+        <ul class="listing__container">
+          <li class="listing__item">
+            <img
+              class="pic"
+              src="Pictures/pinnacle.jpg"
+              alt="Pinnacle Restaurant Services Logo"
+            />
+            <ul class="info">
+              <li class="listing__details">6th April</li>
+              <li class="listing__details">
+                <b>Pinnacle Restaurant Services</b>
+              </li>
+              <li class="listing__details">
+                Job: Customer Services & Purchasing
+              </li>
+              <li class="listing__details">Compensation: Negotiable</li>
+              <li class="listing__details">Employment Type: Full-Time</li>
+            </ul>
             <div class="button__container">
-              <a href="listingdetails.html" class="viewListing">View Listing</a> 
+              <a href="listingdetails.html" class="viewListing">View Listing</a>
               <button id="addFavourite3">Add to Favourites</button>
-          </ul>
-        </li>
-      </ul>
-    </div>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-    <!-- Listing 4 -->
-    <div class="property" data-type="part">
-      <ul class="listing__container">
-        <li class="listing__item">
-          <img class="pic" src="Pictures/dogwood tutoring.jpg" alt="Dogwood Tutoring and Test Prep Logo" />
-          <ul class="info">
-            <li class="listing__details">7th April</li>
-            <li class="listing__details"><b>Dogwood Tutoring and Test Prep</b></li>
-            <li class="listing__details">Job: Office Administrator</li>
-            <li class="listing__details">Compensation: $18.00-$20.00 per hour</li>
-            <li class="listing__details">Employment Type: Part-Time</li>
+      <!-- Listing 4 -->
+      <div class="property" data-type="part">
+        <ul class="listing__container">
+          <li class="listing__item">
+            <img
+              class="pic"
+              src="Pictures/dogwood_tutoring.jpg"
+              alt="Dogwood Tutoring and Test Prep Logo"
+            />
+            <ul class="info">
+              <li class="listing__details">7th April</li>
+              <li class="listing__details">
+                <b>Dogwood Tutoring and Test Prep</b>
+              </li>
+              <li class="listing__details">Job: Office Administrator</li>
+              <li class="listing__details">
+                Compensation: $18.00-$20.00 per hour
+              </li>
+              <li class="listing__details">Employment Type: Part-Time</li>
+            </ul>
             <div class="button__container">
-              <a href="listingdetails.html" class="viewListing">View Listing</a> 
+              <a href="listingdetails.html" class="viewListing">View Listing</a>
               <button id="addFavourite4">Add to Favourites</button>
-              
-
-          </ul>
-        </li>
-      </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <script src="js/listings.js"></script>
-  <script src="js/script.js"></script>
-</body>
-<footer>
-  <div class="footer-content">
-    <p>&copy; 2023 Craigslist. All rights reserved.</p>
-  </div>
-</footer>
+    <script src="js/listings.js"></script>
+    <script src="js/script.js"></script>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2023 Craigslist. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
-

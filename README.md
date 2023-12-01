@@ -111,6 +111,9 @@ There are several bugs/problems that I have discovered but have yet to address:
 - On the listings page, the view listing and add to favourite buttons are not properly where it is supposed to be due to faulty CSS.
 - On the listings page, when scrolling down, the border of the sidebar intersects into the footer.
 - On the favourites page, with 3 or less favourites added, the footer is quite high on the page.
+- When going into the listings page, the filter is automatically unchecked, which should therefore show no listings. However, all listings are shown.
+- On the listings page or favourites page, all of the "View Listing" buttons lead to one listing details page in particular when it should all show different pages since they are different listings.
+- On the listings page, for the searchbar, after searching, to reset the search, the input has to be nothing to show all listings again.
 
 ## Credits
 

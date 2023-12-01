@@ -1,3 +1,4 @@
+/* Search Bar */
 #search__container {
   padding: 10px 10px 10px 0px;
 }
@@ -12,6 +13,7 @@
   margin-top: 10px;
 }
 
+/* Sidebar */
 .sidebar {
   width: 15%;
   height: 100%;
@@ -20,18 +22,16 @@
   border-right: 1px solid lightgrey;
 }
 
+/* Filter function */
 #filter_by {
   margin-bottom: 5px;
 }
 
-#filterFt {
+#filterFt, #filterPt {
   margin: 5px;
 }
 
-#filterPt {
-  margin: 5px;
-}
-
+/* Main */
 .main-content {
   margin-left: 15%;
   padding: 20px;
@@ -83,6 +83,7 @@
   background-color: #248eff;
 }
 
+/* Media Query */
 @media screen and (max-width: 600px){
   #filter_by{
     font-size: 1rem;

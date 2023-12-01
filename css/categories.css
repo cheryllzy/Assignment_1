@@ -91,6 +91,7 @@
       flex-direction: column;
   }
   
+  /* Options under each Category */
   .clickable-word {
     height: 30px;
     width: 154.33px;

@@ -1,7 +1,6 @@
-/* Importing Montserrat font from Google Fonts */
+/* Font import*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 
-/* Global Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,8 +8,6 @@
   font-family: "Montserrat", sans-serif;
 }
 
-
-/* Navbar Styles */
 .navbar {
   background-color: rgb(240, 240, 240);
   position: sticky;
@@ -20,7 +17,6 @@
   min-width: 100%;
 }
 
-/* Navbar Logo Styles */
 .navbar__logo {
   margin: 20px 0px 0px 20px;
   display: flex;
@@ -28,43 +24,12 @@
   height: 35px;
 }
 
-/* Navbar Container Styles */
 .navbar__container {
   display: flex;
   height: 35px;
   align-items: center;
 }
 
-/* Navbar Menu Styles */
-.navbar__menu {
-  height: 60px;
-  width: 100%;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 25px 0px 15px 0px;
-}
-
-/* Navbar Item Styles */
-.navbar_item {
-  padding: 20px;
-}
-
-/* Navbar Links Styles */
-.navbar__links {
-  font-size: 1rem;
-  text-decoration: none;
-  color: black;
-  white-space: nowrap;
-}
-
-/* Navbar Links Hover Styles */
-.navbar__links:hover {
-  color: #007bff;
-}
-
-/* Logo Name Styles */
 .logo__name {
   margin-left: 5px;
   font-size: 1rem;
@@ -85,7 +50,7 @@ footer {
   flex-direction: column;
 }
 
-/* Responsive Navigation Styles */
+/* Responsive */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -159,6 +124,7 @@ body {
   display: block;
 }
 
+/* Media Query */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child),
   .dropdown .dropbtn {

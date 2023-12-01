@@ -1,4 +1,4 @@
-/* Searchbar Styles */
+/* Searchbar */
 #findListings {
   padding: 10px;
   margin: 0px;
@@ -39,7 +39,7 @@ select {
   margin: 5px;
 }
 
-/* Top Categories Styles */
+/* Top Categories */
 
 .categories{
     display: flex;

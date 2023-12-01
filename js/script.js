@@ -14,7 +14,8 @@ function search() {
     }
 }
 
-function myFunction() {
+
+function NavDropDown() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";

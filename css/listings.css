@@ -14,7 +14,7 @@
 
 .sidebar {
   width: 15%;
-  height: 100vh;
+  height: 100%;
   padding: 20px;
   position: fixed;
   border-right: 1px solid lightgrey;
@@ -35,6 +35,7 @@
 .main-content {
   margin-left: 15%;
   padding: 20px;
+  margin-bottom: 5rem;
 }
 
 .listing__container {
@@ -80,4 +81,25 @@
 
 .viewListing:hover {
   background-color: #248eff;
+}
+
+@media screen and (max-width: 600px){
+  #filter_by{
+    font-size: 1rem;
+  }
+
+  .sidebar{
+    padding: 5px;
+    width: 20%;
+  }
+
+  .main-content{
+    margin-left: 20%;
+  }
+
+  .filterName{
+    font-size: 0.8rem;
+  }
+
+
 }

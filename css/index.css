@@ -27,6 +27,7 @@
   align-items: center;
   font-size: 1rem;
   width: 100%;
+  min-width: 100%;
 }
 
 select {
@@ -73,8 +74,13 @@ select {
 
 }
 .img-button{
-  height: 13rem;
-  
+  display: flex;
+  height: 10rem;
+}
+
+.img-button1{
+  display: flex;
+  height: 10rem;
 }
 .square-button {
   margin: 0 5px;
@@ -91,4 +97,12 @@ select {
 
 
 /* Media Queries */
-
+@media screen and (max-width: 600px){
+  .img-button{
+    height: 5rem;
+  }
+  
+  .img-button1{
+    height: 7rem;
+  }
+}

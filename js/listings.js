@@ -84,21 +84,3 @@ function addToFavourites(id) {
       alert('Listing is already in favorites!');
   }
 }
-
-// function to remove listing from favourites
-function removeFromFavourites(id) {
-  // Retrieve favorites from local storage
-  const favourites = JSON.parse(localStorage.getItem('favourites')) || [];
-
-  // remove listing
-  const index = favourites.indexOf(id);
-  if (index !== -1) {
-      favourites.splice(index, 1);
-
-      // save updated favourite listings to local storage
-      localStorage.setItem('favourites', JSON.stringify(favourites));
-
-      // update page changes
-      location.reload();
-  }
-}

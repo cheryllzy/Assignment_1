@@ -27,7 +27,8 @@
   margin-bottom: 5px;
 }
 
-#filterFt, #filterPt {
+#filterFt,
+#filterPt {
   margin: 5px;
 }
 
@@ -87,23 +88,21 @@
 }
 
 /* Media Query */
-@media screen and (max-width: 600px){
-  #filter_by{
+@media screen and (max-width: 600px) {
+  #filter_by {
     font-size: 1rem;
   }
 
-  .sidebar{
+  .sidebar {
     padding: 5px;
     width: 20%;
   }
 
-  .main-content{
+  .main-content {
     margin-left: 20%;
   }
 
-  .filterName{
+  .filterName {
     font-size: 0.8rem;
   }
-
-
 }

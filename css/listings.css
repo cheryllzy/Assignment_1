@@ -49,7 +49,8 @@
 
 .listing__item {
   display: flex;
-  align-items: center; /* Center items on the cross axis */
+  align-items: center;
+  justify-content: space-between;
 }
 
 .pic {
@@ -58,7 +59,7 @@
 }
 
 .info {
-  margin-left: 20px; /* Add margin to separate the logo and info */
+  margin-left: 20px;
 }
 
 .listing__details {
@@ -67,7 +68,9 @@
 }
 
 .button__container {
-  margin: 5px 5px 5px 0px;
+  display: flex;
+  margin-top: 10%;
+  align-self: flex-end;
 }
 
 .viewListing {
